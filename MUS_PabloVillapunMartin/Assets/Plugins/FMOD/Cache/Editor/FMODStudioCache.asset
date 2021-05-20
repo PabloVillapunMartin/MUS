@@ -36,17 +36,59 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 4342817088995559735}
-  - {fileID: 4052135984136338896}
+  - {fileID: 5740907507215630108}
+  - {fileID: 2208934624817891877}
   EditorEvents:
-  - {fileID: -2753052669506760193}
+  - {fileID: 1666309702711700198}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 4052135984136338896}
+  - {fileID: 2208934624817891877}
   StringsBanks:
-  - {fileID: 4342817088995559735}
-  stringsBankWriteTime: 637568767154135840
+  - {fileID: 5740907507215630108}
+  stringsBankWriteTime: 637571195251161158
   cacheVersion: 6
+--- !u!114 &1666309702711700198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/TrackP
+  m_EditorClassIdentifier: 
+  Path: event:/TrackP
+  guid: c4fdad4f66721b4c9b9d53843a3629d3
+  Banks:
+  - {fileID: 2208934624817891877}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 8200
+--- !u!114 &2208934624817891877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMod/ProyectoFMOD/AdaptativeMusicProject/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637571195251151184
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &4052135984136338896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86,4 +128,25 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 742
+  Exists: 1
+--- !u!114 &5740907507215630108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMod/ProyectoFMOD/AdaptativeMusicProject/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637571195251161158
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 744
   Exists: 1

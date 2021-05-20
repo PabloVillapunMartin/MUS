@@ -204,8 +204,8 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: ../FMod/TestUnity/TestUnity.fspro
-  sourceBankPath: ..\FMod\TestUnity\Build
+  sourceProjectPath: ../FMod/ProyectoFMOD/AdaptativeMusicProject/AdaptativeMusicProject.fspro
+  sourceBankPath: ..\FMod\ProyectoFMOD\AdaptativeMusicProject\Build
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
   BankLoadType: 0
