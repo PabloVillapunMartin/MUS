@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="DAWAsset" id="{a24b2792-fb8a-4a3d-9070-bc0c4f012b7a}">
+		<property name="assetPath">
+			<value>TestReaper.rpp.link/Percusion1.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>72.625011337868486</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8df7e239-94c0-4ef4-a788-ad7c5aa7bcd3}</destination>
+		</relationship>
+		<relationship name="project">
+			<destination>{d8551b93-f251-4c73-8820-f893357dbd43}</destination>
+		</relationship>
+	</object>
+</objects>

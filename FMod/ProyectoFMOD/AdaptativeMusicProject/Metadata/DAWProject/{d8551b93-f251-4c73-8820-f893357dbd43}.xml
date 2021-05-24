@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="DAWProject" id="{d8551b93-f251-4c73-8820-f893357dbd43}">
+		<property name="assetPath">
+			<value>TestReaper.rpp.link/</value>
+		</property>
+		<property name="dawProjectPath">
+			<value>D:/UCM/3ro/MUS/Parte2/ProyectosReaper/ProyectoFinal_FMOD/TestReaper/TestReaper.rpp</value>
+		</property>
+		<property name="renderedAssetsPath">
+			<value>Renders</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8df7e239-94c0-4ef4-a788-ad7c5aa7bcd3}</destination>
+		</relationship>
+	</object>
+</objects>
