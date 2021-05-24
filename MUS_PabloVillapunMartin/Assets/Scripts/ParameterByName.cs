@@ -5,6 +5,8 @@ using UnityEngine;
 public class ParameterByName : MonoBehaviour
 {
     public string parameterName = "";
+    public float maxValue = 1.0f;
+    public float minValue = 0.0f;
 
     FMOD.Studio.EventInstance prueba;
     void Start()
@@ -17,7 +19,7 @@ public class ParameterByName : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            prueba.setParameterByName(parameterName, 1f);
+            prueba.setParameterByName(parameterName, maxValue);
         }
     }
 
@@ -25,7 +27,7 @@ public class ParameterByName : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            prueba.setParameterByName(parameterName, 0f);
+            prueba.setParameterByName(parameterName, minValue);
         }
     }
 }
