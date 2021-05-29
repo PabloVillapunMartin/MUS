@@ -15,8 +15,7 @@ public class ParameterByName : MonoBehaviour
     float value;
     void Start()
     {
-        prueba = FMODUnity.RuntimeManager.CreateInstance("event:/Prueba");
-        prueba.start();
+        prueba = GameObject.Find("AudioInstance").GetComponent<AudioInstanceMngr>().getAudioInstance();
         value = minValue;
     }
 
