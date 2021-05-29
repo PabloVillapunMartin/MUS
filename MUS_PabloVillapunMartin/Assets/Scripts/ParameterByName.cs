@@ -5,21 +5,33 @@ using UnityEngine;
 public class ParameterByName : MonoBehaviour
 {
     public string parameterName = "";
-    public float maxValue = 1.0f;
+    public float maxValue = 0.8f;
     public float minValue = 0.0f;
+    public float fadeSpeed = 0.3f;
 
     FMOD.Studio.EventInstance prueba;
+    bool fadeIn = false;
+    bool fadeOut = false;
+    float value;
     void Start()
     {
         prueba = FMODUnity.RuntimeManager.CreateInstance("event:/Prueba");
         prueba.start();
+        value = minValue;
+    }
+
+    private void Update()
+    {
+        if (fadeIn) FadeIn();
+        else if (fadeOut) FadeOut();
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
         {
-            prueba.setParameterByName(parameterName, maxValue);
+            fadeIn = true;
+            fadeOut = false;
         }
     }
 
@@ -27,7 +39,26 @@ public class ParameterByName : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            prueba.setParameterByName(parameterName, minValue);
+            fadeOut = true;
+            fadeIn = false;
         }
+    }
+
+    private void FadeIn()
+    {
+        value += fadeSpeed * Time.deltaTime;
+        if (value > maxValue) value = maxValue;
+        prueba.setParameterByName(parameterName, value);
+
+        if (value == maxValue) fadeIn = false;
+    }
+
+    private void FadeOut()
+    {
+        value -= fadeSpeed * Time.deltaTime;
+        if (value < minValue) value = minValue;
+        prueba.setParameterByName(parameterName, value);
+
+        if (value == minValue) fadeOut = false;
     }
 }
