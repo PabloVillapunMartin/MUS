@@ -333,6 +333,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSpeed: 10
   maxSpeed: 5
+  followTarget: {fileID: 1258519902}
 --- !u!1 &68087747
 GameObject:
   m_ObjectHideFlags: 0
