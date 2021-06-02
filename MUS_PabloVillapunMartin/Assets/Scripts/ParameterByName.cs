@@ -17,6 +17,8 @@ public class ParameterByName : MonoBehaviour
     {
         prueba = GameObject.Find("AudioInstance").GetComponent<AudioInstanceMngr>().getAudioInstance();
         value = minValue;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     private void Update()
